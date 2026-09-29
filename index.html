@@ -114,6 +114,10 @@ ol.steps p{margin:0;color:var(--muted)}
 button{font-family:var(--display);font-size:14px;background:var(--gold);color:var(--ink);border:0;padding:10px 14px;cursor:pointer;box-shadow:4px 4px 0 var(--ink)}
 .os{display:inline-block;margin-top:22px;font-family:var(--display);font-size:15px;text-decoration:none;background:var(--cyan);color:var(--ink);padding:12px 16px;box-shadow:4px 4px 0 var(--ink)}
 .os[aria-disabled="true"]{background:#2a1256;color:var(--muted);box-shadow:4px 4px 0 #000;cursor:default}
+.herolinks{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:22px}
+.herolinks .os{margin-top:0}
+.os--x{background:var(--pink);color:var(--ink)}
+.os--x:hover{filter:brightness(1.08)}
 button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
 
 .rules{margin-top:36px;padding:22px 24px;border-left:6px solid var(--pink);background:rgba(12,6,32,.6)}
@@ -142,7 +146,10 @@ footer img{width:96px;float:right;margin-left:16px}
     </div>
     <p class="tag">1,111 pixel cats. Minted by calling out, not by clicking.</p>
     <p class="lede">There's no mint button. Buy the coin, post your wallet address as a callout, and a cat lands in your wallet.</p>
-    <a class="os" id="os1" href="#" aria-disabled="true">OpenSea coming soon</a>
+    <div class="herolinks">
+      <a class="os" id="os1" href="#" aria-disabled="true">OpenSea coming soon</a>
+      <a class="os os--x" href="https://x.com/CalloutCats" target="_blank" rel="noopener">Follow on X</a>
+    </div>
   </header>
 
   <div class="tracker" id="tracker" aria-live="polite">
@@ -195,6 +202,7 @@ footer img{width:96px;float:right;margin-left:16px}
     <img class="px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB+0lEQVR4AeyVsUoEMRCGsz6MwqGWoj6AvZW11RVaaCU2FjZipQgWFj6AlSCIcAjXqViqHN41FuJzrHwL/xKymWzWxmaFz0kmM//8CXo35/75pzfQv0D/Av0LZL3AYLBcdv28yu1pNYDQ69PIEXNNUJvbkzQgoZ/vL3d7c5VlomtP0gA3ZjhxNv10p8f7lQmGWHDz8eMDLVm0GkCF4cSDozOCYwgvEsLhyvoGwamn2iR+mQa4IYMQYjCwZ6heJdTlDKgFetmjFdZqbxqggEEItQ2m1oehQK+fj62TBrgBTRghwvziqgPWPuTAz7GWBusYSQPcgNurcWFpzRVFUeEPs/I5r2AamEzeCgb7t2cPZRn/XLLy0qI3xDQQFmpvDbHy6rNiJwPT9+daZ/bxUq+tfF2QWHQygA6DgbUPOfBzOeuGgZ29w1IgkPorvri+c0BdDPVKjxjWNQxcnp8Ugj8e/hPCJu3Ho3sH2oeRXjSkRwxrGgZwKVTMTUB74ubWsPqC4l+NNTlBLWgvPaJyig0DuBQUcQNuAogCeQYTQWvOgFqgl3PpEdn7NAz4h1ojBIgCQ2JwBtSC+lMxywAC+kLZHu46hsTgzK9l3UarAQYD4oAgMYZ/Rg+QS5E0gIAGpURiZ+pDI3aunGmARkRU+NeIBlpWv2nAauiab6v/BQAA//9yGyEwAAAABklEQVQDAEQ2cAykewj7AAAAAElFTkSuQmCC" alt="">
     <p>Callout Cats is a collectible art project. Nothing here is financial advice, and buying the coin comes with the usual risk of losing what you put in. Never share your seed phrase; minting only ever needs your public address.</p>
     <p><a class="oslink" id="os2" href="#" aria-disabled="true">Official OpenSea collection: coming soon</a></p>
+    <p><a class="oslink" href="https://x.com/CalloutCats" target="_blank" rel="noopener">Follow @CalloutCats on X</a></p>
   </footer>
 </div>
 
