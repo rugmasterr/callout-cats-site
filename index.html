@@ -46,8 +46,7 @@ img.px,canvas{image-rendering:pixelated;image-rendering:crisp-edges}
 a{color:var(--cyan)}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.hero{padding:34px 0 0;position:relative;text-align:center;
-  min-height:88vh;display:flex;flex-direction:column;justify-content:center}
+.hero{padding:0;position:relative;text-align:center}
 .catband{position:relative;margin:0 auto;max-width:1120px}
 .banner{width:100%;height:auto;display:block}
 /* the artwork leaves a gap in the middle — the title lives there */
@@ -59,9 +58,8 @@ a{color:var(--cyan)}
 .hero .tag,.hero .lede{margin-left:auto;margin-right:auto}
 .hero .tag{max-width:22ch}
 .hero .lede{max-width:52ch}
-.hero{padding-bottom:clamp(20px,5vh,56px)}
+
 /* on a narrow screen the gap is too tight for type — stack instead */
-@media (max-height:620px){.hero{min-height:0}}
 @media (max-width:620px){
   .wordmark{position:static;transform:none;width:auto;font-size:clamp(32px,10vw,54px);margin:0 0 14px}
   .catband{display:flex;flex-direction:column-reverse}
